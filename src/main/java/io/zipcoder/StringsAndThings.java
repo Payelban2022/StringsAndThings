@@ -1,6 +1,8 @@
 package io.zipcoder;
 
 
+import java.util.Objects;
+
 /**
  * @author tariq
  */
@@ -56,6 +58,18 @@ public class StringsAndThings {
      *           containsEqualNumberOfIsAndNot("noisxxnotyynotxisi") // Should return true
      */
     public Boolean containsEqualNumberOfIsAndNot(String input){
+        for(int i = 0; i < input.length(); i++){
+            System.out.print(input.charAt(i)+",");
+
+
+
+
+
+
+
+
+        }
+
         return null;
     }
 
@@ -67,6 +81,13 @@ public class StringsAndThings {
      *           gHappy("xxggyygxx") // Should return  false
      */
     public Boolean gIsHappy(String input){
+
+        int len = input.length();
+        for(int i = 0; i < len; i ++){
+            System.out.print(input.charAt(i)+",");
+
+
+        }
         return null;
     }
 
