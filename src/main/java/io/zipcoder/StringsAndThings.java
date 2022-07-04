@@ -15,8 +15,21 @@ public class StringsAndThings {
      *           countYZ("day fyyyz"); // Should return 2
      */
     public Integer countYZ(String input){
-
-        return null;
+    String[] a = input.split("\\s+");
+    int length=a.length;
+    int counter=0;
+    for(int i=0; i<length;i++){
+        System.out.println(a[i]);
+        String[] letter=a[i].split("");
+        int charLen=letter.length-1;
+        System.out.println(letter[charLen]);
+        String lastLetter=letter[charLen];
+        System.out.println(lastLetter);
+        if(lastLetter.equals("y") || lastLetter.equals("z")){
+            counter++;
+        }
+    }
+    return counter;
     }
 
     /**
@@ -66,6 +79,22 @@ public class StringsAndThings {
      *            countTriple("a") // Should return 0
      */
     public Integer countTriple(String input){
-        return null;
+        int l = input.length();
+        int j = 0;
+        for(int i = 0; i < l-2;i ++) {
+            char x = input.charAt(i);
+            if (x == input.charAt(i + 1) && x == input.charAt(i + 2))
+                j++;
+            return j;
+        } return countTriple(input);
+
     }
-}
+
+
+
+
+
+
+
+    }
+
